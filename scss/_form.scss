@@ -1,0 +1,91 @@
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .form-container {
+    width: 850px;
+    display: flex;
+    border-radius: 10px;
+    overflow: hidden;
+    .form-left-heading {
+      text-transform: uppercase;
+      color: $fr_color;
+      padding: 20px 0;
+    }
+    .text-container {
+      margin: 10px 0;
+      .text {
+        color: $fr_color;
+        padding: 10px 0;
+        font-size: 16px;
+        font-weight: 300;
+      }
+    }
+  }
+
+  .form-left {
+    flex: 1;
+    background-color: $fl_color;
+    padding: 40px 20px;
+    .link-btn {
+      @extend .btn;
+      background-color: $fr_color;
+      &:hover {
+        background-color: $hover_color;
+      }
+    }
+  }
+  .form-right {
+    flex: 1;
+    padding: 40px 20px;
+    background-color: $fr_color;
+    .form-right-heading {
+      text-transform: uppercase;
+      color: $fl_color;
+      padding: 20px 0;
+    }
+    .form {
+      .form-group {
+        .input-lable {
+          text-transform: capitalize;
+          font-weight: 500;
+          display: block;
+          padding: 10px 0;
+        }
+        .input-filed {
+          outline: none;
+          padding: 15px 12px;
+          width: 100%;
+          border: 1px solid $border_color;
+          border-radius: 8px 0 8px 0;
+          margin-bottom: 10px;
+          font-size: medium;
+          @include family;
+          &:focus {
+            border: 1px solid $focus_color;
+          }
+        }
+        .error {
+          color: $invalid_color;
+        }
+      }
+      .form-btn {
+        margin-top: 30px;
+        text-align: center;
+        .input-submit {
+          @extend .btn;
+          background-color: $fl_color;
+          color: $fr_color;
+          text-transform: capitalize;
+          font-weight: 700;
+          font-size: medium;
+          &:hover {
+            opacity: 0.8;
+          }
+        }
+      }
+    }
+  }
+}

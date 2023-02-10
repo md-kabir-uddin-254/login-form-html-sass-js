@@ -1,0 +1,43 @@
+//responsive
+@media screen and (max-width: 768px) {
+  .container {
+    padding: 0 10px;
+    .form-container {
+      flex-direction: column;
+    }
+  }
+}
+
+//tablet 768
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .container {
+    padding: 0 10px;
+  }
+}
+// //mobile sm 320
+// @media screen and (max-width: 374px) {
+// }
+
+// //mobile md 375
+// @media screen and (min-width: 375px) and (max-width: 424px) {
+// }
+
+// //mobile lg 425
+// @media screen and (min-width: 425px) and (max-width: 767px) {
+// }
+
+// //tablet 768
+// @media screen and (min-width: 768px) and (max-width: 1023px) {
+// }
+
+// //Laptop 1024
+// @media screen and (min-width: 1024px) and (max-width: 1439px) {
+// }
+
+// //Laptop L 1440
+// @media screen and (min-width: 1440px) and (max-width: 2559px) {
+// }
+
+// //4K 2560
+// @media screen and (min-width: 2560px) {
+// }

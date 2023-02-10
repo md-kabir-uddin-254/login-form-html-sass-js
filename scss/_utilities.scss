@@ -1,0 +1,36 @@
+//all colors
+$bg_color: #75e2e9;
+$fl_color: #3786bd;
+$fr_color: #ffffff;
+$border_color: #e5e5e5;
+$focus_color: #53c83c;
+$invalid_color: #cf3254;
+$hover_color: #dce6ee;
+
+//body
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@mixin family {
+  font-family: "Open Sans", sans-serif;
+}
+html,
+body {
+  background-color: $bg_color;
+  @include family;
+}
+
+.btn {
+  width: 180px;
+  cursor: pointer;
+  outline: none;
+  padding: 15px;
+  text-transform: capitalize;
+  border: none;
+  border-radius: 8px 0 8px 0;
+  font-weight: 700;
+  font-size: 15px;
+  @include family;
+}
